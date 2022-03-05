@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./MyComponents/Header";
+import { Todos } from "./MyComponents/Todos";
+//{because func is const not default}
+import { Footer } from "./MyComponents/Footer";
 
 function App() {
+  let todos = [
+    {
+      sno: 1,
+      title: "Go to the market",
+      desc: "Hello!1",
+    },
+    {
+      sno: 2,
+      title: "Go to the shop",
+      desc: "Hello!2",
+    },
+    {
+      sno: 2,
+      title: "Go to the home",
+      desc: "Hello!3",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="My Todos List" searchBar={false} />
+      <Todos todos={todos} />
+      <Footer />
+    </>
   );
 }
 
