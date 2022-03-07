@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.CARd{
+background-color: #00F0FF;
+}
+
+.footer{
+  background:#000;
+    border-top:1px solid #00F0FF;
+    clear:both;
+    height:50px;
+    /* margin-top:-30px; */
+    padding:50px 50px 50px 50px;
+    width:100%;
+    position: fixed;
+    bottom: 1px;
+    left: 0px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
