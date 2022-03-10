@@ -1,9 +1,10 @@
 import React from "react";
+import "../App.css";
 
 export const TodoItem = ({ todo, onDelete }) => {
   return (
     <>
-      <div>
+      <div className="backG">
         <h4>{todo.title}</h4>
         <p>{todo.desc}</p>
         <button

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.backG{
+  background-color: aliceblue;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -29,7 +33,7 @@
 }
 
 .CARd{
-background-color: #00F0FF;
+background-color: #c0e9ec;
 }
 
 .footer{

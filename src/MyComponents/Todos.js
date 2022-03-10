@@ -1,5 +1,6 @@
 import React from "react";
 import { TodoItem } from "./TodoItem";
+import "../App.css";
 
 export const Todos = (props) => {
   let myStyle = {
@@ -7,7 +8,7 @@ export const Todos = (props) => {
     margin: "40px auto",
   };
   return (
-    <div className="container" style={myStyle}>
+    <div className="container backG" style={myStyle}>
       <h3 className="my-3">Todos List</h3>
       {props.todos.length === 0
         ? "No Todos to display"
